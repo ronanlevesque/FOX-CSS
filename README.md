@@ -1,5 +1,4 @@
 # FOX CSS
-----------
 
 A light Sass/CSS framework, built with the following things in mind:
 
