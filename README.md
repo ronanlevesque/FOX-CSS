@@ -15,7 +15,7 @@ The framework is very modular and can easily be customized according to specific
 
 Credits go to [KNACSS (FR)](http://knacss.com/) by Raphaël Goetter/Alsacréations for providing me with the idea and [Normalize](http://necolas.github.io/normalize.css/) by Nicolas Gallagher for the nice fixes.
 
-Want to know more? Visit [fox-css.com](http://fox.css.com).
+Want to know more? Visit [fox-css.com](http://fox-css.com).
 
 ## Changelog
 
