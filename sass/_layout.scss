@@ -1,0 +1,106 @@
+/*-------------------------*/
+/* +LAYOUTS                */        
+/*-------------------------*/
+// no more annoying padding+width calculations...
+// for IE7: box-sizing polyfill https://github.com/Schepp/box-sizing-polyfill
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	*behavior: url(scripts/boxsizing.htc);
+}
+
+// align a block to the left
+.left {
+	float: left;
+}
+
+// align a block to the right
+.right {
+	float: right;
+}
+
+// center a block
+.center {
+	margin: auto;
+}
+
+// text align
+.txt-left {
+	text-align: left;
+}
+
+.txt-right {
+	text-align: right;
+}
+
+.txt-center {
+	text-align: center;
+}
+
+// inline elements
+.inline {
+	display:inline;
+}
+
+// inline-block elements
+.inlineb {
+	display:inline-block;
+}
+
+// use this after floated elements
+.clear {
+	clear: both;
+}
+
+// blocks that contain floats
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+// use this class to hide elements for screens
+.hidden {
+	position: absolute;
+	left: -9999px;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+// use this classe to remove elements from your page on 'mobile first' designs
+// display on larger screens with display: block; as an example
+.no-display {
+	display: none;
+}
+
+// percentage based columns
+.p10 {width: 10%;}
+.p20 {width: 20%;}
+.p25 {width: 25%;}
+.p30 {width: 30%;}
+.p33 {width: 33.333333%;}
+.p40 {width: 40%;}
+.p50 {width: 50%;}
+.p60 {width: 60%;}
+.p66 {width: 66.666666%;}
+.p70 {width: 70%;}
+.p75 {width: 75%;}
+.p80 {width: 80%;}
+.p90 {width: 90%;}
+.p100 {width: 100%;}
+
+// pixel based columns
+.px100 {width: 100px;}
+.px200 {width: 200px;}
+.px300 {width: 300px;}
+.px400 {width: 400px;}
+.px500 {width: 500px;}
+.px600 {width: 600px;}
+.px700 {width: 700px;}
+.px800 {width: 800px;}
+.px900 {width: 900px;}
+.px960 {width: 960px;}

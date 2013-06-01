@@ -1,0 +1,602 @@
+/*
+FOX CSS 1.2
+by Ronan Levesque - CC BY 3.0 license
+
+Credits:
+- Normalize by Nicolas Gallagher http://bit.ly/PbZ7Pf
+- KNACSS by Raphael Goetter/Alsacreations http://knacss.com/
+*/
+/*-------------------------*/
+/* +GLOBAL                 */
+/*-------------------------*/
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, Sans-serif;
+}
+
+html, body, blockquote, form {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  margin: 1em 0;
+  padding-left: 2em;
+}
+
+ul {
+  list-style-type: square;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+blockquote, code, embed, iframe, img, input, object, pre, table, td, textarea, video {
+  max-width: 100%;
+  height: auto;
+}
+
+a img, form, fieldset {
+  border: none;
+}
+
+input, button, select {
+  vertical-align: middle;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+abbr {
+  cursor: help;
+  border-bottom: 1px dotted #bbb;
+}
+
+figure {
+  margin: 0;
+}
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+blockquote p, button, input, li h1, li h2, li h3, li h4, li h5, li h6, li li, li p, select, td p, th p {
+  font-size: 100%;
+}
+
+small {
+  font-size: 80%;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+code, kbd, pre, samp {
+  font-family: Monospace, Serif;
+}
+
+sub, sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/*-------------------------*/
+/* +FORMATTING             */
+/*-------------------------*/
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.8em;
+}
+
+h4 {
+  font-size: 1.6em;
+}
+
+h5 {
+  font-size: 1.4em;
+}
+
+h6 {
+  font-size: 1.2em;
+}
+
+blockquote, caption, li, p, pre, td, textarea, th {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+code, div, p, pre, table, td, textarea, th, samp {
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+
+code, pre, samp {
+  white-space: pre-wrap;
+}
+
+table {
+  text-align: left;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th {
+  padding: .5em 0;
+}
+
+td {
+  padding: .5em 0;
+  border-top: 1px solid #ccc;
+}
+
+.red-txt {
+  color: #bc0000;
+}
+
+.orange-txt {
+  color: #e05d0e;
+}
+
+.yellow-txt {
+  color: #f5ce18;
+}
+
+.green-txt {
+  color: #00b716;
+}
+
+.blue-txt {
+  color: #0054d1;
+}
+
+.btn {
+  padding: 5px 7px;
+  color: #fff;
+  background: #000;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #555;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.4) inset;
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.4) inset;
+}
+
+.black {
+  background: #000;
+  border: 1px solid #000;
+}
+
+.dark {
+  background: #333;
+  border: 1px solid #333;
+}
+
+.dark:hover {
+  background: #262626;
+  border: 1px solid #262626;
+}
+
+.red {
+  background: #d40000;
+  border: 1px solid #d40000;
+}
+
+.red:hover {
+  background: #bb0000;
+  border: 1px solid #bb0000;
+}
+
+.orange {
+  background: #e05d0e;
+  border: 1px solid #e05d0e;
+}
+
+.orange:hover {
+  background: #c8530d;
+  border: 1px solid #c8530d;
+}
+
+.yellow {
+  background: #ddb705;
+  border: 1px solid #ddb705;
+}
+
+.yellow:hover {
+  background: #c4a204;
+  border: 1px solid #c4a204;
+}
+
+.green {
+  background: #039100;
+  border: 1px solid #039100;
+}
+
+.green:hover {
+  background: #027700;
+  border: 1px solid #027700;
+}
+
+.blue {
+  background: #0044aa;
+  border: 1px solid #0044aa;
+}
+
+.blue:hover {
+  background: #003a90;
+  border: 1px solid #003a90;
+}
+
+/*-------------------------*/
+/* +LAYOUTS                */
+/*-------------------------*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  *behavior: url(scripts/boxsizing.htc);
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.center {
+  margin: auto;
+}
+
+.txt-left {
+  text-align: left;
+}
+
+.txt-right {
+  text-align: right;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.inline {
+  display: inline;
+}
+
+.inlineb {
+  display: inline-block;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.hidden {
+  position: absolute;
+  left: -9999px;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.no-display {
+  display: none;
+}
+
+.p10 {
+  width: 10%;
+}
+
+.p20 {
+  width: 20%;
+}
+
+.p25 {
+  width: 25%;
+}
+
+.p30 {
+  width: 30%;
+}
+
+.p33 {
+  width: 33.333333%;
+}
+
+.p40 {
+  width: 40%;
+}
+
+.p50 {
+  width: 50%;
+}
+
+.p60 {
+  width: 60%;
+}
+
+.p66 {
+  width: 66.666666%;
+}
+
+.p70 {
+  width: 70%;
+}
+
+.p75 {
+  width: 75%;
+}
+
+.p80 {
+  width: 80%;
+}
+
+.p90 {
+  width: 90%;
+}
+
+.p100 {
+  width: 100%;
+}
+
+.px100 {
+  width: 100px;
+}
+
+.px200 {
+  width: 200px;
+}
+
+.px300 {
+  width: 300px;
+}
+
+.px400 {
+  width: 400px;
+}
+
+.px500 {
+  width: 500px;
+}
+
+.px600 {
+  width: 600px;
+}
+
+.px700 {
+  width: 700px;
+}
+
+.px800 {
+  width: 800px;
+}
+
+.px900 {
+  width: 900px;
+}
+
+.px960 {
+  width: 960px;
+}
+
+/*-------------------------*/
+/* +RESPONSIVE LAYOUTS     */
+/*-------------------------*/
+@media screen and (min-width: 40.0625em) {
+  .r10 {
+    width: 10%;
+  }
+
+  .r20 {
+    width: 20%;
+  }
+
+  .r25 {
+    width: 25%;
+  }
+
+  .r30 {
+    width: 30%;
+  }
+
+  .r33 {
+    width: 33.333333%;
+  }
+
+  .r40 {
+    width: 40%;
+  }
+
+  .r50 {
+    width: 50%;
+  }
+
+  .r60 {
+    width: 60%;
+  }
+
+  .r66 {
+    width: 66.666666%;
+  }
+
+  .r70 {
+    width: 70%;
+  }
+
+  .r75 {
+    width: 75%;
+  }
+
+  .r80 {
+    width: 80%;
+  }
+
+  .r50-25 {
+    width: 50%;
+  }
+
+  .r50-33 {
+    width: 50%;
+  }
+
+  .r33-33 {
+    width: 33.333333%;
+  }
+
+  .r66-33 {
+    width: 66.666666%;
+  }
+
+  .r10, .r20, .r25, .r30, .r33, .r40, .r50, .r60, .r66, .r70, .r80, .r50-25, .r50-33, .r33-33, .r66-33 {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 60em) {
+  .r50-25 {
+    width: 25%;
+  }
+
+  .r50-33 {
+    width: 33.333333%;
+  }
+
+  .r33-33 {
+    width: 33.333333%;
+  }
+
+  .r66-33 {
+    width: 33.333333%;
+  }
+
+  .r100-33 {
+    width: 33.333333%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+/*-------------------------*/
+/* +IE SUPPORT             */
+/*-------------------------*/
+.ie7 .inlineb {
+  display: inline;
+  zoom: 1;
+}
+
+.ie7 .r10, .ie7 .r20, .ie7 .r25, .ie7 .r30, .ie7 .r33, .ie7 .r40, .ie7 .r50, .ie7 .r60, .ie7 .r66, .ie7 .r70, .ie7 .r80, .ie7 .r50-25, .ie7 .r50-33, .ie7 .r33-33, .ie7 .r66-33, .ie7 .r100-33 {
+  display: inline;
+  zoom: 1;
+}
+
+.ie8 .r10, .ie8 .r20, .ie8 .r25, .ie8 .r30, .ie8 .r33, .ie8 .r40, .ie8 .r50, .ie8 .r60, .ie8 .r66, .ie8 .r70, .ie8 .r80, .ie8 .r50-25, .ie8 .r50-33, .ie8 .r33-33, .ie8 .r66-33, .ie8 .r100-33 {
+  display: inline-block;
+}
+
+.ie7 .r10, .ie8 .r10 {
+  width: 10%;
+}
+
+.ie7 .r20, .ie8 .r20 {
+  width: 20%;
+}
+
+.ie7 .r25, .ie8 .r25 {
+  width: 25%;
+}
+
+.ie7 .r30, .ie8 .r30 {
+  width: 30%;
+}
+
+.ie7 .r33, .ie8 .r33 {
+  width: 33.333333%;
+}
+
+.ie7 .r40, .ie8 .r40 {
+  width: 40%;
+}
+
+.ie7 .r50, .ie8 .r50 {
+  width: 50%;
+}
+
+.ie7 .r60, .ie8 .r60 {
+  width: 60%;
+}
+
+.ie7 .r66, .ie8 .r66 {
+  width: 66.666666%;
+}
+
+.ie7 .r70, .ie8 .r70 {
+  width: 70%;
+}
+
+.ie7 .r75, .ie8 .r75 {
+  width: 75%;
+}
+
+.ie7 .r80, .ie8 .r80 {
+  width: 80%;
+}
+
+.ie7 .r50-25, .ie8 .r50-25 {
+  width: 25%;
+}
+
+.ie7 .r50-33, .ie8 .r50-33 {
+  width: 33.333333%;
+}
+
+.ie7 .r33-33, .ie8 .r33-33 {
+  width: 33.333333%;
+}
+
+.ie7 .r66-33, .ie8 .r66-33 {
+  width: 33.333333%;
+}
+
+.ie7 .r100-33, .ie8 .r100-33 {
+  width: 33.333333%;
+}
+
+.ie8 img {
+  width: auto;
+}
