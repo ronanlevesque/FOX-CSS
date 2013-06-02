@@ -40,7 +40,7 @@ Sass version of FOX CSS is composed of one main SCSS file and several partial fi
 * _responsive-layout.scss
 * _ie.scss
 
-You can easily edit and remove the partials you don"t need.
+You can easily edit and remove the partials you don't need.
 
 ## Contact
 
