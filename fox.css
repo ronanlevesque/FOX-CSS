@@ -417,26 +417,6 @@ td {
   width: 960px;
 }
 
-.grid {
-  text-align: justify;
-  font-size: 0.1px;
-}
-
-.grid:after {
-  content: '';
-  display: inline-block;
-  width: 100%;
-}
-
-.grid .break {
-  width: 100%;
-  height: 0;
-}
-
-.grid li {
-  display: inline-block;
-}
-
 /*-------------------------*/
 /* +RESPONSIVE LAYOUTS     */
 /*-------------------------*/
@@ -532,6 +512,26 @@ td {
     vertical-align: top;
   }
 }
+.grid {
+  text-align: justify;
+  font-size: 0.1px;
+}
+
+.grid:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.grid .break {
+  width: 100%;
+  height: 0;
+}
+
+.grid li {
+  display: inline-block;
+}
+
 /*-------------------------*/
 /* +IE SUPPORT             */
 /*-------------------------*/
