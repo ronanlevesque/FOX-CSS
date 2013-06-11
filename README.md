@@ -22,6 +22,7 @@ Want to know more? Visit [fox-css.com](http://fox-css.com).
 * 14 sep 2012: first release.
 * 24 sep 2012: added new templates in the responsive section of the framework in order to bring more variety to the possible templates.
 * 01 jun 2013: FOX CSS is now written with Sass.
+. 11 jun 2013: added new grid layout using `text-align:justify`.
 
 ## How to
 
