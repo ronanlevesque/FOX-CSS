@@ -1,6 +1,6 @@
 body {
 	margin: 0 auto;
-	padding: 0 1em 1em 1em;
+	padding: 0 1em 0;
 	max-width: 1000px;
 }
 
@@ -57,9 +57,37 @@ table {width: 100%;}
 
 .ie7 .less, .ie8 .less {display: none;}
 
+.grid li {
+	margin-bottom: 4%;
+	padding-bottom: 48%;
+	width: 48%;
+	background: #ccc;
+}
+
+.grid .placeholder {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
 @media screen and (min-width: 641px) {
 
 .less {display: none;}
+
+.grid li {
+	margin-bottom: 3%;
+	padding-bottom: 31%;
+	width: 31%;
+}
+
+}
+
+@media screen and (min-width: 800px) {
+
+.grid li {
+	margin-bottom: 2.5%;
+	padding-bottom: 23%;
+	width: 23%;
+}
 
 }
 
@@ -72,6 +100,12 @@ table {width: 100%;}
 @media screen and (min-width: 960px) {
 
 .more {display: none;}
+
+.grid li {
+	margin-bottom: 2.5%;
+	padding-bottom: 18%;
+	width: 18%;
+}
 
 }
 
