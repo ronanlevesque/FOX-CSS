@@ -11,7 +11,7 @@ A light Sass/CSS framework, built with the following things in mind:
 * inconsistency bugs fixes
 * support for IE7+
 
-The framework is very modular and can easily be customized according to specific needs.
+The framework is very modular and can easily be customized according to specific needs. Please not that the whole code is commented in the Sass _partials files.
 
 Credits go to [KNACSS (FR)](http://knacss.com/) by Raphaël Goetter/Alsacréations for providing me with the idea and [Normalize](http://necolas.github.io/normalize.css/) by Nicolas Gallagher for the nice fixes.
 
