@@ -28,7 +28,7 @@ Want to know more? Visit [fox-css.com](http://fox-css.com).
 
 Just include the CSS file in the `head` section of your document, like so:
 
-    <link rel="stylesheet" href="fox.css" />
+    <link rel="stylesheet" type="text/css" href="fox.css" />
 
 ## Sass version
 
