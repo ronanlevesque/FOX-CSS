@@ -23,6 +23,7 @@ Want to know more? Visit [fox-css.com](http://fox-css.com).
 * 24 sep 2012: added new templates in the responsive section of the framework in order to bring more variety to the possible templates.
 * 01 jun 2013: FOX CSS is now written with Sass.
 * 11 jun 2013: added new grid layout using `text-align:justify`.
+* 17 jul 2013: added [I hate U flat !](http://ronanlevesque.fr/ihateuflat/) library to the framework.
 
 ## How to
 
