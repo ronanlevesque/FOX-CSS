@@ -13,11 +13,6 @@ h1 {
 
 table {width: 100%;}
 
-.btn {
-	display: inline-block;
-	margin: .2em 0;
-	padding: 5px 7px !important;
-}
 
 .left, .r80, .r20, .r50, .p20, .demo .r50-33, .dark, .custom {
 	padding: 5em 0;
