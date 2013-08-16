@@ -4,7 +4,11 @@
 // Media queries
 @mixin bp($point) {
     @media screen and (min-width: $point / 16 + em) { @content; }
-  }
+}
+
+@mixin bpmax($point) {
+    @media screen and (max-width: $point / 16 + em) { @content; }
+}
 
 // Font size & line-height
 @mixin fs($fontsize: 16, $fontbase: 16) {
