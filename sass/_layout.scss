@@ -142,7 +142,7 @@
 // 3 columns = 31% / margin-bottom = 3%
 // 4 columns = 23% / margin-bottom = 2.5%
 // 5 columns = 18% / margin-bottom = 2.5%
-.grid li {
+.grid li, .grid div {
 	display: inline-block;
 }
 
