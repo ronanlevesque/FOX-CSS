@@ -1,7 +1,7 @@
 /*-------------------------*/
 /* +RESPONSIVE LAYOUTS     */
 /*-------------------------*/
-// these columns will switch to a one-column template under 641px
+// These columns will switch to a one-column template under 641px
 @media screen and (min-width: 40.0625em) {
 
 .r10 {width: 10%;}
@@ -17,7 +17,7 @@
 .r75 {width: 75%;}
 .r80 {width: 80%;}
 
-// these columns have two % sizes above 640px:
+// These columns have two % sizes above 640px:
 //	- first number is between 641 and 959px
 //	- second is above 959px
 .r50-25 {width: 50%;}
@@ -33,7 +33,7 @@
 
 @media screen and (min-width: 60em) {
 
-// these columns have two % sizes above 640px:
+// These columns have two % sizes above 640px:
 //	- first number is between 641 and 959px
 //	- second is above 959px
 .r50-25 {width: 25%;}

@@ -1,7 +1,7 @@
 /*-------------------------*/
 /* +FORMATTING             */        
 /*-------------------------*/
-// customize headings here
+// Customize headings here
 h1 {font-size: 2.5em;}
 h2 {font-size: 2em;}
 h3 {font-size: 1.8em;}
@@ -9,13 +9,13 @@ h4 {font-size: 1.6em;}
 h5 {font-size: 1.4em;}
 h6 {font-size: 1.2em;}
 
-// customize body text here
+// Customize body text here
 blockquote, caption, li, p, pre, td, textarea, th {
 	font-size: 1em;
 	line-height: 1.5em;
 }
 
-// elegant solutions to break words
+// Elegant solutions to break words
 code, div, p, pre, table, td, textarea, th, samp {
 	word-wrap: break-word;
 	-webkit-hyphens: auto;
@@ -29,14 +29,14 @@ code, pre, samp {
 	white-space: pre-wrap;
 }
 
-// text aligned to the left by default, remove spaces between cells
+// Text aligned to the left by default, remove spaces between cells
 table {
 	text-align: left;
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
-// add a light styling to the table
+// Add a light styling to the table
 th {
 	padding: .5em 0;
 }
@@ -46,13 +46,13 @@ td {
 	border-top: 1px solid #ccc;
 }
 
-// styling for texts: warning message, error message...
+// Styling for texts: warning message, error message...
 .red-txt {color: #be1818;}
 .orange-txt {color: #d35400;}
 .green-txt {color: #27ae60;}
 .blue-txt {color: #3498db;}
 
-// colors for buttons, blocks etc.
+// Colors for buttons, blocks etc.
 .black {background: #000;}
 .dark {background: #333;}
 .dark:hover {background: darken(#333, 5%);}

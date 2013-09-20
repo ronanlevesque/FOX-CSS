@@ -1,7 +1,7 @@
 /*-------------------------*/
 /* +GLOBAL                 */
 /*-------------------------*/
-// avoid iOS text size adjust when in landscape
+// Avoid iOS text size adjust when in landscape
 html {
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
@@ -11,13 +11,13 @@ body {
 	font-family: Arial, Helvetica, Sans-serif;
 }
 
-// light reset
+// Light reset
 html, body, blockquote, form {
 	margin: 0;
 	padding: 0;
 }
 
-// lists styling
+// Lists styling
 ul, ol {
 	margin: 1em 0;
 	padding-left: 2em;
@@ -27,23 +27,23 @@ ul {
 	list-style-type: square;
 }
 
-// display HTML5 elements as blocks for old browsers
+// Display HTML5 elements as blocks for old browsers
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section {
 	display: block;
 }
 
-// add a max size and give auto height resize
+// Add a max size and give auto height resize
 blockquote, code, embed, iframe, img, input, object, pre, table, td, textarea, video {
 	max-width: 100%;
 	height: auto;
 }
 
-// remove unwanted borders
+// Remove unwanted borders
 a img, form, fieldset {
 	border: none;
 }
 
-// light form styling
+// Light form styling
 input, button, select {
 	vertical-align: middle;
 }
@@ -53,43 +53,43 @@ textarea {
 	vertical-align: top;
 }
 
-// consistency between browsers
+// Consistency between browsers
 abbr {
 	cursor: help;
 	border-bottom: 1px dotted #bbb;
 }
 
-// fix for IE8-9 & Safari 5
+// Fix for IE8-9 & Safari 5
 figure {
 	margin: 0;
 }
 
-// fix for IE8-9
+// Fix for IE8-9
 audio, canvas, video {
 	display: inline-block;
 }
 
-// give child elements their parents size
+// Give child elements their parents size
 blockquote p, button, input, li h1, li h2, li h3, li h4, li h5, li h6, li li, li p, select, td p, th p {
 	font-size: 100%;
 }
 
-// browsers consistency
+// Browsers consistency
 small {
 	font-size: 80%;
 }
 
-// consistency: Firefox 4+, Safari 5, and Chrome
+// Consistency: Firefox 4+, Safari 5, and Chrome
 b, strong {
 	font-weight: bold;
 }
 
-// consistency: Safari 5 and Chrome
+// Consistency: Safari 5 and Chrome
 code, kbd, pre, samp {
 	font-family: Monospace, Serif;
 }
 
-// sub & sup fix for line-height
+// Sub & sup fix for line-height
 sub, sup {
 	position: relative;
 	font-size: 75%;
