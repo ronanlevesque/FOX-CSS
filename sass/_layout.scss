@@ -114,6 +114,16 @@
 	font-size: 0.1px;
 }
 
+// Opera fix
+@media (min-resolution: .001dpcm) {
+
+.grid {
+	font-size: inherit;
+	line-height: 0;
+}
+
+}
+
 // use this for IE8+ support
 .grid:after {
 	content: '';

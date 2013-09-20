@@ -393,6 +393,12 @@ td {
   font-size: 0.1px;
 }
 
+@media (min-resolution: 0.001dpcm) {
+  .grid {
+    font-size: inherit;
+    line-height: 0;
+  }
+}
 .grid:after {
   content: '';
   display: inline-block;
