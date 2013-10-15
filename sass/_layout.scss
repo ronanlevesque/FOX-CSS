@@ -131,7 +131,7 @@
 	width: 100%;
 }
 
-// Use this only if you need IE7 support
+// Use this class only if you need IE7 support
 .grid .break {
 	width: 100%;
 	height: 0;
@@ -144,30 +144,4 @@
 // 5 columns = 18% / margin-bottom = 2.5%
 .grid li, .grid div {
 	display: inline-block;
-}
-
-// Flexbox mixins
-// http://css-tricks.com/snippets/css/a-guide-to-flexbox/
-@mixin flexbox() {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-}
-
-@mixin flex($flexvalues) {
-	-webkit-box-flex: $flexvalues;
-	-moz-box-flex: $flexvalues;
-	-webkit-flex: $flexvalues;
-	-ms-flex: $flexvalues;
-	flex: $flexvalues;
-}
-
-@mixin order($val) {
-	-webkit-box-ordinal-group: $flexval;  
-	-moz-box-ordinal-group: $flexval;     
-	-ms-flex-order: $flexval;     
-	-webkit-order: $flexval;  
-	order: $flexval;
 }
