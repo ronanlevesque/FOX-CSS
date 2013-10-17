@@ -1,13 +1,39 @@
 // LAYOUT
 
-// Media queries - min width
+// Those 2 mixins are able to create a separate stylesheet for IE<9
+// Based on http://jakearchibald.github.io/sass-ie/
+// You need to create a new SCSS file and add the following lines in it :
+// $fix-mqs: 1200; // or whatever max size you want to support...
+// @import "fox";
+
+$fix-mqs: false !default;
+
+// Min-width media queries
 @mixin bp($point) {
-    @media screen and (min-width: $point / 16 + em) { @content; }
+    @if $fix-mqs {
+        @if $fix-mqs >= $point {
+            @content;
+        }
+    }
+    @else {
+        @media screen and (min-width: $point / 16 + em) {
+            @content;
+        }
+    }
 }
 
-// Media queries - max width
+// Max-width media queries
 @mixin bpmax($point) {
-    @media screen and (max-width: $point / 16 + em) { @content; }
+    @if $fix-mqs {
+        @if $fix-mqs >= $point {
+            @content;
+        }
+    }
+    @else {
+        @media screen and (max-width: $point / 16 + em) {
+            @content;
+        }
+    }
 }
 
 // Responsive blocks (two sizes)
