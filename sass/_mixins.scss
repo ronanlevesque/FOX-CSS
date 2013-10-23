@@ -1,8 +1,8 @@
 // LAYOUT
 
-// Those 2 mixins are able to create a separate stylesheet for IE<9
+// Those 2 mixins (bp and bpmax) are able to create a separate stylesheet for IE<9
 // Based on http://jakearchibald.github.io/sass-ie/
-// You need to create a new SCSS file and add the following lines in it :
+// You need to create a new SCSS file for IE and add the following lines in it :
 // $fix-mqs: 1200; // or whatever max size you want to support...
 // @import "fox";
 
@@ -83,13 +83,59 @@ $fix-mqs: false !default;
 
 // FORMATTING
 
-// Font size
+// Rem formatting with px fallback
+// http://designbyjoel.com/blog/2013-02-28-sass-rems/
+$def-px: 16;
+@function fix8_unit_to_px($val) {
+    @if $val == auto {
+        @return $val;
+    }
+    @else {
+        @if unitless($val) {
+        @if $val == 0 { @return $val }
+        @else { @return $val+px};
+        } @else { @return $val};
+    }
+}
+
+@function fix8_unit_to_rem($val) {
+    @if $val == auto {
+        @return $val;
+    }
+    @else {
+        @if unitless($val) {
+        @if $val == 0 { @return $val }
+        @else { @return $val / $def-px+rem};
+        } @else { @return $val};
+    }
+}
+
+//Example (value in px)
+// p {@include px-rem(padding, 10);}
+@mixin pxrem($prop, $val...) {
+    $n: length($val);
+    $i: 1;
+
+    $px-list: ();
+    $rem-list: ();
+
+    @while $i <= $n {
+        $px-list: append($px-list, fix8_unit_to_px(nth($val, $i)));
+        $rem-list: append($rem-list, fix8_unit_to_rem(nth($val, $i)));
+        $i: $i + 1;
+    }
+
+    #{$prop}: $px-list;
+    #{$prop}: $rem-list;
+}
+
+// Font size (value in px)
 @mixin fs($fontsize: 16, $fontbase: 16) {
     font-size: $fontsize + px;
     font-size: ($fontsize / $fontbase) * 1rem;
 }
 
-// Line height
+// Line height (value in px)
 @mixin lh($heightvalue: 16, $heightbase: 16) {
     font-size: $heightvalue + px;
     font-size: ($heightvalue / $heightbase) * 1rem;
