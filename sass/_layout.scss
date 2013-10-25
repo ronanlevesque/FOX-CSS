@@ -1,6 +1,12 @@
 /*-------------------------*/
 /* +LAYOUTS                */        
 /*-------------------------*/
+
+// Display HTML5 elements as blocks for old browsers
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section {
+	display: block;
+}
+
 // No more annoying padding+width calculations...
 // For IE7: box-sizing polyfill https://github.com/Schepp/box-sizing-polyfill
 * {

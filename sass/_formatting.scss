@@ -1,7 +1,8 @@
 /*-------------------------*/
 /* +FORMATTING             */        
 /*-------------------------*/
-// Customize headings here
+
+// Headings default size
 h1 {font-size: 2.5em;}
 h2 {font-size: 2em;}
 h3 {font-size: 1.8em;}
@@ -9,10 +10,19 @@ h4 {font-size: 1.6em;}
 h5 {font-size: 1.4em;}
 h6 {font-size: 1.2em;}
 
-// Customize body text here
+// Body text default size and line height
 blockquote, caption, li, p, pre, td, textarea, th {
 	font-size: 1em;
 	line-height: 1.5em;
+}
+
+// Lists styling
+ul, ol {
+	padding-left: 2em;
+}
+
+ul {
+	list-style-type: square;
 }
 
 // Elegant solutions to break words
@@ -46,6 +56,13 @@ td {
 	border-top: 1px solid #ccc;
 }
 
+// Text truncate
+.ellip {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 // Styling for texts: warning message, error message...
 .red-txt {color: #be1818;}
 .orange-txt {color: #d35400;}
@@ -54,15 +71,28 @@ td {
 
 // Colors for buttons, blocks etc.
 .black {background: #000;}
-.dark {background: #333;}
-.dark:hover {background: darken(#333, 5%);}
-.red {background: #be1818;}
-.red:hover {background: darken(#be1818, 5%);}
-.orange {background: #d35400;}
-.orange:hover {background: darken(#d35400, 5%);}
-.yellow {background: #ddb705;}
-.yellow:hover {background: darken(#ddb705, 5%);}
-.green {background: #27ae60;}
-.green:hover {background: darken(#27ae60, 5%);}
-.blue {background: #3498db;}
-.blue:hover {background: darken(#3498db, 5%);}
+.dark {
+	background: #333;
+	&:hover, &:focus {background: darken(#333, 5%);}
+}
+.red {
+	background: #be1818;
+	&:hover, &:focus {background: darken(#be1818, 5%);}
+}
+.orange {
+	background: #d35400;
+	&:hover, &:focus {background: darken(#d35400, 5%);}
+}
+.yellow {
+	background: #ddb705;
+	&:hover, &:focus {background: darken(#ddb705, 5%);}
+}
+.green {
+	background: #27ae60;
+	&:hover, &:focus {background: darken(#27ae60, 5%);}
+}
+.blue {
+	background: #3498db;
+
+	&:hover, &:focus {background: darken(#3498db, 5%);}
+}

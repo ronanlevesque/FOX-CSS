@@ -1,29 +1,18 @@
 /*-------------------------*/
-/* +GLOBAL                 */
+/* +RESET AND NORMALIZE    */
 /*-------------------------*/
-// Avoid iOS text size adjust when in landscape
+
+// Default body styling
 body {
 	font-family: Arial, Helvetica, Sans-serif;
+	color: #000;
+	background: #fff;
 }
 
 // Light reset
 html, body, blockquote, form {
 	margin: 0;
 	padding: 0;
-}
-
-// Lists styling
-ul, ol {
-	padding-left: 2em;
-}
-
-ul {
-	list-style-type: square;
-}
-
-// Display HTML5 elements as blocks for old browsers
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section {
-	display: block;
 }
 
 // Add a max size and give auto height resize

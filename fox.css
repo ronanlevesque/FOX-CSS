@@ -7,27 +7,17 @@ Credits:
 - KNACSS by Raphael Goetter/Alsacreations http://knacss.com/
 */
 /*-------------------------*/
-/* +GLOBAL                 */
+/* +RESET AND NORMALIZE    */
 /*-------------------------*/
 body {
   font-family: Arial, Helvetica, Sans-serif;
+  color: #000;
+  background: #fff;
 }
 
 html, body, blockquote, form {
   margin: 0;
   padding: 0;
-}
-
-ul, ol {
-  padding-left: 2em;
-}
-
-ul {
-  list-style-type: square;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section {
-  display: block;
 }
 
 blockquote, code, embed, iframe, img, input, object, pre, table, td, textarea, video {
@@ -124,6 +114,14 @@ blockquote, caption, li, p, pre, td, textarea, th {
   line-height: 1.5em;
 }
 
+ul, ol {
+  padding-left: 2em;
+}
+
+ul {
+  list-style-type: square;
+}
+
 code, div, p, pre, table, td, textarea, th, samp {
   word-wrap: break-word;
   -webkit-hyphens: auto;
@@ -152,6 +150,12 @@ td {
   border-top: 1px solid #ccc;
 }
 
+.ellip {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .red-txt {
   color: #be1818;
 }
@@ -175,54 +179,52 @@ td {
 .dark {
   background: #333;
 }
-
-.dark:hover {
+.dark:hover, .dark:focus {
   background: #262626;
 }
 
 .red {
   background: #be1818;
 }
-
-.red:hover {
+.red:hover, .red:focus {
   background: #a71515;
 }
 
 .orange {
   background: #d35400;
 }
-
-.orange:hover {
+.orange:hover, .orange:focus {
   background: #b94a00;
 }
 
 .yellow {
   background: #ddb705;
 }
-
-.yellow:hover {
+.yellow:hover, .yellow:focus {
   background: #c4a204;
 }
 
 .green {
   background: #27ae60;
 }
-
-.green:hover {
+.green:hover, .green:focus {
   background: #229955;
 }
 
 .blue {
   background: #3498db;
 }
-
-.blue:hover {
+.blue:hover, .blue:focus {
   background: #258cd1;
 }
 
 /*-------------------------*/
 /* +LAYOUTS                */
 /*-------------------------*/
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -411,7 +413,7 @@ td {
 /*-------------------------*/
 /* +RESPONSIVE LAYOUTS     */
 /*-------------------------*/
-@media screen and (min-width: 40.0625em) {
+@media screen and (min-width: 40em) {
   .r10 {
     width: 10%;
   }
@@ -590,4 +592,11 @@ td {
 
 .ie8 img {
   width: auto;
+}
+
+.box {
+  margin: 10px auto;
+  margin: 0.625rem auto;
+  font-size: 20px;
+  font-size: 1.25rem;
 }
