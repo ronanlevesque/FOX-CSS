@@ -593,10 +593,3 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 .ie8 img {
   width: auto;
 }
-
-.box {
-  margin: 10px auto;
-  margin: 0.625rem auto;
-  font-size: 20px;
-  font-size: 1.25rem;
-}

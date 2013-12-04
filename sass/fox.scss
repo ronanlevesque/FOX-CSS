@@ -20,8 +20,3 @@ Credits:
 @import "ie";
 
 // YOUR STYLES OR PARTIAL SCSS FILES GO HERE
-
-.box {
-	@include pxrem(margin, 10, auto);
-	@include pxrem(font-size, 20)
-}
