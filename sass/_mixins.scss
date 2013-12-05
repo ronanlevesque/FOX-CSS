@@ -129,6 +129,12 @@ $def-px: 16;
     #{$prop}: $rem-list;
 }
 
+// Font-size in rem with px fallback
+@mixin fs($fontsize: 16, $fontbase: 16) {
+  font-size: $fontsize + px;
+  font-size: ($fontsize / $fontbase) * 1rem;
+}
+
 // Opacity
 @mixin opacity($opacity) {
     opacity: $opacity;
