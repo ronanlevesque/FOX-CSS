@@ -93,7 +93,7 @@ $def-px: 16;
     @else {
         @if unitless($val) {
         @if $val == 0 { @return $val }
-        @else { @return $val+px};
+        @else { @return $val * $def-px+px};
         } @else { @return $val};
     }
 }
@@ -105,7 +105,7 @@ $def-px: 16;
     @else {
         @if unitless($val) {
         @if $val == 0 { @return $val }
-        @else { @return $val / $def-px+rem};
+        @else { @return $val+rem};
         } @else { @return $val};
     }
 }
