@@ -23,7 +23,8 @@ Want to know more? Visit [fox-css.com](http://fox-css.com).
 * 24 sep 2012: added new templates in the responsive section of the framework in order to bring more variety to the possible templates.
 * 01 jun 2013: FOX CSS is now written with Sass.
 * 11 jun 2013: added new grid layout using `text-align:justify`.
-* 15 sep 2013: updated mixins and included more responsive possibilities, updated global Sass files. 
+* 15 sep 2013: updated mixins and included more responsive possibilities, updated global Sass files.
+* 23 jan 2014: switched to gulpjs, added a few fixes and resets.
 
 ## How to
 
