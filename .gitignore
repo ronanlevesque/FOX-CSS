@@ -5,3 +5,7 @@ ehthumbs.db
 # Sass
 
 /.sass-cache/
+
+## Node
+
+/node_modules/

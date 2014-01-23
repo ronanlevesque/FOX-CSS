@@ -2,6 +2,11 @@
 /* +RESET AND NORMALIZE    */
 /*-------------------------*/
 
+// iOS orientation change bug fix
+html, body {
+	-webkit-text-size-adjust: 100%;
+}
+
 // Default body styling
 body {
 	font-family: Arial, Helvetica, Sans-serif;
@@ -44,11 +49,11 @@ abbr {
 
 // Fix for IE8-9 & Safari 5
 figure {
-	margin: 0;
+	margin: 1em 40px;
 }
 
 // Fix for IE8-9
-audio, canvas, video {
+audio, canvas, progress, video {
 	display: inline-block;
 }
 

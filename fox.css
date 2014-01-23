@@ -9,6 +9,10 @@ Credits:
 /*-------------------------*/
 /* +RESET AND NORMALIZE    */
 /*-------------------------*/
+html, body {
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
   font-family: Arial, Helvetica, Sans-serif;
   color: #000;
@@ -44,10 +48,10 @@ abbr {
 }
 
 figure {
-  margin: 0;
+  margin: 1em 40px;
 }
 
-audio, canvas, video {
+audio, canvas, progress, video {
   display: inline-block;
 }
 
