@@ -410,7 +410,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   height: 0;
 }
 
-.grid li, .grid div {
+.grid > li, .grid > div {
   display: inline-block;
 }
 
