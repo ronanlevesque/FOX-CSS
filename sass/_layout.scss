@@ -123,9 +123,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 // Opera bugfix
 @media (min-resolution: .001dpcm) { 
 	_:-o-prefocus, .grid {
-				font-size: inherit;
-				line-height: 0;
-		} 
+		font-size: inherit;
+		line-height: 0;
+	} 
 }
 
 // You can use the following sizes if you want:
@@ -146,8 +146,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 .grid:after {
 	content: '';
 	display: inline-block;
-	margin: 0;
-	padding: 0;
 	width: 100%;
 }
 

@@ -411,8 +411,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 .grid:after {
   content: '';
   display: inline-block;
-  margin: 0;
-  padding: 0;
   width: 100%;
 }
 
