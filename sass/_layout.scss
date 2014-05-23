@@ -120,27 +120,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 	font-size: 0.1px;
 }
 
-// Opera fix
-@media (min-resolution: .001dpcm) {
-
-.grid {
-	font-size: inherit;
-	line-height: 0;
-}
-
-}
-
-// Use this for IE8+ support
-.grid:after {
-	content: '';
-	display: inline-block;
-	width: 100%;
-}
-
-// Use this class only if you need IE7 support
-.grid .break {
-	width: 100%;
-	height: 0;
+// Opera bugfix
+@media (min-resolution: .001dpcm) { 
+	_:-o-prefocus, .grid {
+				font-size: inherit;
+				line-height: 0;
+		} 
 }
 
 // You can use the following sizes if you want:
@@ -150,4 +135,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 // 5 columns = 18% / margin-bottom = 2.5%
 .grid > li, .grid > div {
 	display: inline-block;
+	vertical-align: top;
+}
+
+.grid .placeholder {
+	margin-bottom: 0;
+}
+
+// Use this for IE8+ support
+.grid:after {
+	content: '';
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+// Use this class only if you need IE7 support
+.grid .break {
+	width: 100%;
+	height: 0;
 }
