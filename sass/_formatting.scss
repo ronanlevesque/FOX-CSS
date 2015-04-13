@@ -1,5 +1,5 @@
 /*-------------------------*/
-/* +FORMATTING             */        
+/* +FORMATTING             */
 /*-------------------------*/
 
 // Headings default size
@@ -64,10 +64,10 @@ td {
 }
 
 // Styling for texts: warning message, error message...
-.red-txt {color: #be1818;}
-.orange-txt {color: #d35400;}
-.green-txt {color: #27ae60;}
-.blue-txt {color: #3498db;}
+.red-txt {color: $red;}
+.orange-txt {color: $orange;}
+.green-txt {color: $green;}
+.blue-txt {color: $blue;}
 
 // Colors for buttons, blocks etc.
 .black {background: #000;}
@@ -76,23 +76,23 @@ td {
 	&:hover, &:focus {background: darken(#333, 5%);}
 }
 .red {
-	background: #be1818;
-	&:hover, &:focus {background: darken(#be1818, 5%);}
+	background: $red;
+	&:hover, &:focus {background: darken($red, 5%);}
 }
 .orange {
-	background: #d35400;
-	&:hover, &:focus {background: darken(#d35400, 5%);}
+	background: $orange;
+	&:hover, &:focus {background: darken($orange, 5%);}
 }
 .yellow {
 	background: #ddb705;
 	&:hover, &:focus {background: darken(#ddb705, 5%);}
 }
 .green {
-	background: #27ae60;
-	&:hover, &:focus {background: darken(#27ae60, 5%);}
+	background: $green;
+	&:hover, &:focus {background: darken($green, 5%);}
 }
 .blue {
-	background: #3498db;
+	background: $blue;
 
-	&:hover, &:focus {background: darken(#3498db, 5%);}
+	&:hover, &:focus {background: darken($blue, 5%);}
 }
