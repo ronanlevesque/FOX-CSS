@@ -1,5 +1,5 @@
 /*-------------------------*/
-/* +LAYOUTS                */        
+/* +LAYOUTS                */
 /*-------------------------*/
 
 // Display HTML5 elements as blocks for old browsers
@@ -13,7 +13,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	*behavior: url(scripts/boxsizing.htc);
 }
 
 // Align a block to the left
@@ -121,11 +120,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 }
 
 // Opera bugfix
-@media (min-resolution: .001dpcm) { 
+@media (min-resolution: .001dpcm) {
 	_:-o-prefocus, .grid {
 		font-size: inherit;
 		line-height: 0;
-	} 
+	}
 }
 
 // You can use the following sizes if you want:
