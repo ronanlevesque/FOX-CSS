@@ -1,0 +1,16 @@
+{
+  "name": "FOX-CSS",
+  "version": "2.1.0",
+  "description": "Light CSS Framework",
+  "license": "MIT",
+  "repository": "ronanlevesque/FOX-CSS",
+  "author": {
+    "name": "Ronan Levesque",
+    "url": "http://ronanlevesque.fr"
+  },
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-sass": "*",
+    "gulp-autoprefixer": "*"
+  }
+}

@@ -1,6 +1,6 @@
-var gulp = require('gulp'),
-	sass = require('gulp-ruby-sass'),
-	autoprefixer = require('gulp-autoprefixer');
+var gulp = require('gulp');
+var	sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', function(){
 	return gulp.src(['./sass/**/*.scss', '!./sass/**/_*.scss'])
@@ -19,5 +19,5 @@ gulp.task('watch', function() {
 		gulp.run('sass');
 	});
 });
- 
+
 gulp.task('default', ['watch']);

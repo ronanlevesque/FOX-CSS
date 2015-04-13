@@ -6,6 +6,9 @@ ehthumbs.db
 
 /.sass-cache/
 
-## Node
+# Node
 
 /node_modules/
+
+# Others
+.DS_Store
