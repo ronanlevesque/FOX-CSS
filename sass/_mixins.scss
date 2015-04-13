@@ -55,32 +55,6 @@ $fix-mqs: false !default;
   }
 }
 
-// Flexbox mixins
-// http://css-tricks.com/snippets/css/a-guide-to-flexbox/
-@mixin flexbox() {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-}
-
-@mixin flex($flexvalues) {
-  -webkit-box-flex: $flexvalues;
-  -moz-box-flex: $flexvalues;
-  -webkit-flex: $flexvalues;
-  -ms-flex: $flexvalues;
-  flex: $flexvalues;
-}
-
-@mixin order($flexval) {
-  -webkit-box-ordinal-group: $flexval;  
-  -moz-box-ordinal-group: $flexval;  
-  -ms-flex-order: $flexval;  
-  -webkit-order: $flexval;  
-  order: $flexval;
-}
-
 // FORMATTING
 
 // Rem formatting with px fallback
