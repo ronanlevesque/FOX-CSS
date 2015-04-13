@@ -8,10 +8,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 }
 
 // No more annoying padding+width calculations...
-// For IE7: box-sizing polyfill https://github.com/Schepp/box-sizing-polyfill
 * {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 

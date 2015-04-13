@@ -103,10 +103,9 @@ ul {
 code, div, p, pre, table, td, textarea, th, samp {
   word-wrap: break-word;
   -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  hyphens: auto; }
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto; }
 
 code, pre, samp {
   white-space: pre-wrap; }
