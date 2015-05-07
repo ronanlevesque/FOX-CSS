@@ -760,6 +760,9 @@ td, th {
         -ms-flex-item-align: end;
             align-self: flex-end; } }
 
+/*-------------------------*/
+/* +GRID IE9               */
+/*-------------------------*/
 .ie9 .fx-row {
   font-size: 0; }
 .ie9 [class*="fx-row-reverse"] {

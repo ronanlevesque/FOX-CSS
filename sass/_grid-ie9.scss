@@ -1,0 +1,66 @@
+/*-------------------------*/
+/* +GRID IE9               */
+/*-------------------------*/
+
+// IE9 support - use with conditional classes
+// This makes use of inline-blocks (white space is removed with font-size 0)
+.ie9 {
+  .fx-row {
+    font-size: 0;
+  }
+
+  [class*="fx-row-reverse"] {
+    direction: rtl;
+
+    > * {
+      direction: ltr;
+    }
+  }
+
+  [class*="fx-col"] {
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  @each $size in $fx-column-sizes {
+  	$roundsize: floor($size);
+  	.fx-col-#{$roundsize}-xs {
+      width: #{$size}%;
+  	}
+
+    .fx-row-start-xs {
+      text-align: left;
+    }
+
+    .fx-row-end-xs {
+      text-align: right;
+    }
+
+    .fx-row-center-xs, .fx-row-between-xs, .fx-row-around-xs {
+      text-align: center;
+    }
+  }
+
+  @each $breakpoint, $value in $fx-grid-breakpoints {
+    @include fx-bp($value) {
+    	@each $size in $fx-column-sizes {
+    		$roundsize: floor($size);
+    		.fx-col-#{$roundsize}-#{$breakpoint} {
+          width: #{$size}%;
+    		}
+
+        .fx-row-start-#{$breakpoint} {
+          text-align: left;
+        }
+
+        .fx-row-center-#{$breakpoint}, .fx-row-between-#{$breakpoint}, .fx-row-around-#{$breakpoint} {
+          text-center: right;
+        }
+    	}
+    }
+  }
+
+  .fx-col {
+    width: 100%;
+  }
+}
