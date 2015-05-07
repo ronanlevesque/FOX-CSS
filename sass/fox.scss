@@ -1,23 +1,21 @@
 /*
-FOX CSS 2.0
+FOX CSS 3.0
 by Ronan Levesque - CC BY 3.0 license
 
-Credits:
-- Normalize by Nicolas Gallagher http://bit.ly/PbZ7Pf
-- KNACSS by Raphael Goetter/Alsacreations http://knacss.com/
+Includes Normalize by Nicolas Gallagher
+More info => http://necolas.github.io/normalize.css/
 */
 
-// MIXINS
+// VARIABLES & MIXINS
 
 @import "variables";
 @import "mixins";
 
 // IMPORT CHOSEN FOX CSS MODULES
 
-@import "reset";
-@import "formatting";
-@import "layout";
-@import "responsive-layout";
-@import "ie";
+@import "resets";
+@import "normalize";
+@import "utils";
+@import "grid";
 
 // YOUR STYLES OR PARTIAL SCSS FILES GO HERE

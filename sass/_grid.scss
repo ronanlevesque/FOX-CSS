@@ -1,0 +1,155 @@
+/*-------------------------*/
+/* +GRID                   */
+/*-------------------------*/
+
+// Container for each row
+.fx-row {
+  margin-top: -($fx-grid-gutter) + px;
+  margin-left: -($fx-grid-gutter / 2) + px;
+  margin-right: -($fx-grid-gutter / 2) + px;
+  display: flex;
+  flex-wrap: wrap;
+
+  + .fx-row {
+    margin-top: 0;
+  }
+}
+
+// Alignement of items. Use with .fx-row
+@each $position, $value in $fx-row-position {
+  .fx-row-#{$position}-xs {
+    justify-content: $value;
+  }
+}
+
+@each $breakpoint, $value in $fx-grid-breakpoints {
+  @include fx-bp($value) {
+    @each $position, $value in $fx-row-position {
+      .fx-row-#{$position}-#{$breakpoint} {
+        justify-content: $value;
+      }
+    }
+  }
+}
+
+// Reversed row. Use with .fx-row
+.fx-row-reverse-xs {
+  flex-direction: row-reverse;
+}
+
+@each $breakpoint, $value in $fx-grid-breakpoints {
+  @include fx-bp($value) {
+    .fx-row-reverse-#{$breakpoint} {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+// Global settings for columns
+[class*="fx-col"] {
+  margin-top: $fx-grid-gutter + px;
+  padding-left: ($fx-grid-gutter / 2) + px;
+  padding-right: ($fx-grid-gutter / 2) + px;
+  flex-grow: 1;
+}
+
+// Different column sizes
+@each $size in $fx-column-sizes {
+	$roundsize: floor($size);
+	.fx-col-#{$roundsize}-xs {
+    flex-basis: #{$size}%;
+    max-width: #{$size}%;
+	}
+}
+
+@each $breakpoint, $value in $fx-grid-breakpoints {
+  @include fx-bp($value) {
+  	@each $size in $fx-column-sizes {
+  		$roundsize: floor($size);
+  		.fx-col-#{$roundsize}-#{$breakpoint} {
+        flex-basis: #{$size}%;
+        max-width: #{$size}%;
+  		}
+  	}
+  }
+}
+
+// Align item to the top, center, or bottom
+@each $position, $value in $fx-col-position {
+  .fx-col-#{$position}-xs {
+    align-self: $value;
+  }
+}
+
+@each $breakpoint, $value in $fx-grid-breakpoints {
+  @include fx-bp($value) {
+    @each $position, $value in $fx-col-position {
+      .fx-col-#{$position}-#{$breakpoint} {
+        align-self: $value;
+      }
+    }
+  }
+}
+
+// IE9 support - use with conditional classes
+// This makes use of inline-blocks (white space is removed with font-size 0)
+.ie9 {
+  .fx-row {
+    font-size: 0;
+  }
+
+  [class*="fx-row-reverse"] {
+    direction: rtl;
+
+    > * {
+      direction: ltr;
+    }
+  }
+
+  [class*="fx-col"] {
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  @each $size in $fx-column-sizes {
+  	$roundsize: floor($size);
+  	.fx-col-#{$roundsize}-xs {
+      width: #{$size}%;
+  	}
+
+    .fx-row-start-xs {
+      text-align: left;
+    }
+
+    .fx-row-end-xs {
+      text-align: right;
+    }
+
+    .fx-row-center-xs, .fx-row-between-xs, .fx-row-around-xs {
+      text-align: center;
+    }
+  }
+
+  @each $breakpoint, $value in $fx-grid-breakpoints {
+    @include fx-bp($value) {
+    	@each $size in $fx-column-sizes {
+    		$roundsize: floor($size);
+    		.fx-col-#{$roundsize}-#{$breakpoint} {
+          width: #{$size}%;
+    		}
+
+        .fx-row-start-#{$breakpoint} {
+          text-align: left;
+        }
+
+        .fx-row-center-#{$breakpoint}, .fx-row-between-#{$breakpoint}, .fx-row-around-#{$breakpoint} {
+          text-center: right;
+        }
+    	}
+    }
+  }
+
+  .fx-col {
+    width: 100%;
+  }
+}

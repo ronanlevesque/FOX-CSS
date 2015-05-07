@@ -1,0 +1,52 @@
+/*-------------------------*/
+/* +RESET                  */
+/*-------------------------*/
+
+// No more annoying padding + width calculations...
+* {
+  box-sizing: border-box;
+}
+
+// Default stylings
+body {
+  font-family: Arial, Helvetica, Sans-serif;
+  color: #000;
+  background: #fff;
+}
+
+// Light reset
+html, body, blockquote, form {
+  margin: 0;
+  padding: 0;
+}
+
+// Add a max size and give auto height resize
+blockquote, code, embed, iframe, img, input, object, pre, table, td, textarea, video {
+  max-width: 100%;
+  height: auto;
+}
+
+// Remove unwanted borders
+a img, form, fieldset {
+	border: none;
+}
+
+// Light form styling
+input, button, select {
+	vertical-align: middle;
+}
+
+textarea {
+	vertical-align: top;
+}
+
+// Consistency between browsers
+abbr {
+	cursor: help;
+	border-bottom: 1px dotted #bbb;
+}
+
+// Give child elements their parents size
+blockquote p, button, input, li h1, li h2, li h3, li h4, li h5, li h6, li li, li p, select, td p, th p {
+	font-size: 100%;
+}

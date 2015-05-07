@@ -1,4 +1,17 @@
-$red: #be1818;
-$orange: #d35400;
-$green: #27ae60;
-$blue: #3498db;
+//-------------------------*/
+// +VARIABLES              */
+//-------------------------*/
+
+// GRID
+
+// Default margin between elements
+$fx-grid-gutter: 16;
+
+// Default breakpoints for s, m and l columns
+$fx-grid-breakpoints: (s: 768, m: 940, l: 1200);
+
+// DON'T MODIFY BELOW!
+//-------------------------
+$fx-column-sizes: 10, 20, 25, 30, 33.3333, 40, 50, 60, 66.6666, 70, 75, 80, 90, 100;
+$fx-row-position: (start: flex-start, center: center, end: flex-end, between: space-between, around: space-around);
+$fx-col-position: (top: flex-start, center: center, bottom: flex-end);

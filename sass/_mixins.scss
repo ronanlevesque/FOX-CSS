@@ -1,123 +1,27 @@
+//-------------------------*/
+// +MIXINS                 */
+//-------------------------*/
+
 // LAYOUT
 
-// Those 2 mixins (bp and bpmax) are able to create a separate stylesheet for IE<9
-// Based on http://jakearchibald.github.io/sass-ie/
-// You need to create a new SCSS file for IE and add the following lines in it :
-// $fix-mqs: 1200; // or whatever max-size you want to support...
-// @import "fox";
-
-$fix-mqs: false !default;
-
 // Min-width media queries
-@mixin bp($point) {
-  @if $fix-mqs {
-    @if $fix-mqs >= $point {
-      @content;
-    }
-  }
-  @else {
-    @media screen and (min-width: $point / 16 + em) {
-      @content;
-    }
+@mixin fx-bp($point) {
+  @media screen and (min-width: $point / 16 + em) {
+    @content;
   }
 }
 
 // Max-width media queries
-@mixin bpmax($point) {
-  @if $fix-mqs {
-    @if $fix-mqs >= $point {
-      @content;
-    }
-  }
-  @else {
-    @media screen and (max-width: $point / 16 + em) {
-      @content;
-    }
-  }
-}
-
-// Responsive blocks (two sizes)
-@mixin rblock($size1, $breakpoint1) {
-  @media screen and (min-width: $breakpoint1 / 16 + em) {
-    display: inline-block;
-    width: $size1*1%;
-  }
-}
-
-// Responsive blocks (three sizes)
-@mixin rblock2($size1, $size2, $breakpoint1, $breakpoint2) {
-  @media screen and (min-width: $breakpoint1 / 16 + em) {
-    display: inline-block;
-    width: $size1*1%;
-  }
-  @media screen and (min-width: $breakpoint2 / 16 + em) {
-    width: $size2*1%;
+@mixin fx-bp($point) {
+  @media screen and (max-width: $point / 16 + em) {
+    @content;
   }
 }
 
 // FORMATTING
 
-// Rem formatting with px fallback
-// http://designbyjoel.com/blog/2013-02-28-sass-rems/
-$def-px: 16;
-@function fix8_unit_to_px($val) {
-  @if $val == auto {
-    @return $val;
-  }
-  @else {
-    @if unitless($val) {
-    @if $val == 0 { @return $val }
-    @else { @return $val * $def-px+px}
-    } @else { @return $val}
-  }
-}
-
-@function fix8_unit_to_rem($val) {
-  @if $val == auto {
-    @return $val;
-  }
-  @else {
-    @if unitless($val) {
-    @if $val == 0 { @return $val }
-    @else { @return $val+rem}
-    } @else { @return $val}
-  }
-}
-
-// Example (value in px)
-// p {@include pxrem(padding, 10);}
-@mixin pxrem($prop, $val...) {
-  $n: length($val);
-  $i: 1;
-
-  $px-list: ();
-  $rem-list: ();
-
-  @while $i <= $n {
-    $px-list: append($px-list, fix8_unit_to_px(nth($val, $i)));
-    $rem-list: append($rem-list, fix8_unit_to_rem(nth($val, $i)));
-    $i: $i + 1;
-  }
-
-  #{$prop}: $px-list;
-  #{$prop}: $rem-list;
-}
-
-// Font-size in rem with px fallback
-@mixin fs($fontsize: 16, $fontbase: 16) {
-  font-size: $fontsize + px;
-  font-size: ($fontsize / $fontbase) * 1rem;
-}
-
-// Opacity
-@mixin opacity($opacity) {
-  opacity: $opacity;
-  $opacity-ie: $opacity * 100;
-  filter: alpha(opacity=$opacity-ie); // IE8
-}
-
 // HD background images
-@mixin image-2x($image, $width, $height) {
+@mixin fx-img-2x($image, $width, $height) {
   @media (-moz-min-device-pixel-ratio: 1.3),
   (-o-min-device-pixel-ratio: 2.6/2),
   (-webkit-min-device-pixel-ratio: 1.3),

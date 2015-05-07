@@ -1,6 +1,6 @@
 {
   "name": "FOX-CSS",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "Light CSS Framework",
   "license": "MIT",
   "repository": "ronanlevesque/FOX-CSS",
@@ -12,6 +12,8 @@
     "gulp": "*",
     "gulp-sass": "*",
     "gulp-autoprefixer": "*",
+    "gulp-minify-css": "*",
+    "gulp-rename": "*",
     "gulp-notify": "*"
   }
 }

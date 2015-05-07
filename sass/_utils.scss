@@ -1,0 +1,82 @@
+/*-------------------------*/
+/* +UTILS                  */
+/*-------------------------*/
+
+// Text align
+.fx-txt-left {
+	text-align: left;
+}
+
+.fx-txt-right {
+	text-align: right;
+}
+
+.fx-txt-center {
+	text-align: center;
+}
+
+// Text truncate
+.fx-ellip {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// Align a block to the left
+.fx-left {
+	float: left;
+}
+
+// Align a block to the right
+.fx-right {
+	float: right;
+}
+
+// Center a block
+.fx-center {
+	margin: auto;
+}
+
+// Blocks that contain floats
+.fx-clearfix:before, .fx-clearfix:after {
+	content: "";
+	display: table;
+}
+
+.fx-clearfix:after {
+	clear: both;
+}
+
+// Use this after floated elements
+.fx-clear {
+	clear: both;
+}
+
+// Inline elements
+.fx-inline {
+	display: inline;
+}
+
+// Inline-block elements
+.fx-inlineb {
+	display: inline-block;
+}
+
+// Vertically align elements
+.fx-valign {
+  vertical-align: middle;
+}
+
+// Use this class to hide elements for screens
+.fx-hidden {
+	position: absolute;
+	left: -9999px;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+// Use this classe to remove elements from your page on 'mobile first' designs
+// Display on larger screens with display: block; as an example
+.fx-no-display {
+	display: none;
+}
