@@ -10,7 +10,7 @@ A light Sass/CSS framework, built with the following things in mind:
 * inconsistency bugs fixes
 * efficient grid system
 
-The framework is very modular and can easily be customized according to specific needs. Please note that the whole code is commented in the Sass _partials files, just open them with your favorite text editor.
+The framework is very modular and can easily be customized according to specific needs. Please note that the whole code is commented in the Sass partials files, just open them with your favorite text editor.
 
 Want to know more? Visit [fox-css.com](http://fox-css.com).
 
