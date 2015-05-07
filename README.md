@@ -41,6 +41,7 @@ Sass version of FOX CSS is composed of one main SCSS file and several partial fi
 * _normalize.scss
 * _utils.scss
 * _grid.scss
+* _grid-ie9.scss
 
 You can easily edit and remove the partials you don't need, except for `variables` and `mixins`.
 
