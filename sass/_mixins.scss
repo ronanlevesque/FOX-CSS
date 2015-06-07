@@ -12,7 +12,7 @@
 }
 
 // Max-width media queries
-@mixin fx-bp($point) {
+@mixin fx-bp-max($point) {
   @media screen and (max-width: $point / 16 + em) {
     @content;
   }
