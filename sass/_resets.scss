@@ -3,7 +3,9 @@
 /*-------------------------*/
 
 // No more annoying padding + width calculations...
-* {
+*,
+*:after,
+*:before {
   box-sizing: border-box;
 }
 
