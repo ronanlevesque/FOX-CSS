@@ -25,7 +25,7 @@
   @each $size in $fx-column-sizes {
   	$roundsize: floor($size);
   	.fx-col-#{$roundsize}-xs {
-      width: #{$size}%;
+      width: $size * 1%;
   	}
 
     .fx-row-start-xs {
@@ -46,7 +46,7 @@
     	@each $size in $fx-column-sizes {
     		$roundsize: floor($size);
     		.fx-col-#{$roundsize}-#{$breakpoint} {
-          width: #{$size}%;
+          width: $size * 1%;
     		}
 
         .fx-row-start-#{$breakpoint} {

@@ -57,8 +57,8 @@
 @each $size in $fx-column-sizes {
 	$roundsize: floor($size);
 	.fx-col-#{$roundsize}-xs {
-    flex-basis: #{$size}%;
-    max-width: #{$size}%;
+    flex-basis: $size * 1%;
+    max-width: $size * 1%;
 	}
 }
 
@@ -67,8 +67,8 @@
   	@each $size in $fx-column-sizes {
   		$roundsize: floor($size);
   		.fx-col-#{$roundsize}-#{$breakpoint} {
-        flex-basis: #{$size}%;
-        max-width: #{$size}%;
+        flex-basis: $size * 1%;
+        max-width: $size * 1%;
   		}
   	}
   }
